@@ -1,0 +1,26 @@
+function exibeHabilidades(usuarios) {
+  for (usuario of usuarios) {
+    console.log(
+      "O " +
+        usuario.nome +
+        " possui as habilidades: " +
+        usuario.habilidades.join(", ")
+    );
+  }
+}
+
+//Para percorrer um vetor use o for....of 
+//E para unir valores de array com um separador use o join
+
+var usuarios = [
+  {
+    nome: "Diego",
+    habilidades: ["Javascript", "ReactJS", "Redux"]
+  },
+  {
+    nome: "Gabriel",
+    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+  }
+];
+
+exibeHabilidades(usuarios);
